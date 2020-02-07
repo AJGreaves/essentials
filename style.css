@@ -36,6 +36,12 @@ strong {
     font-size: 1.3em;
 }
 
+.text-uppercase-spaced {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
 /* Colors */
 
 .black-background {
@@ -106,14 +112,9 @@ img {
     top: 15%;
 }
 
-#reasons-section li {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    word-spacing: 5px;
-}
-
-#drinks-section {
+#drinks {
     padding: 1rem 0 1rem 0;
+    min-height: 50vh;
     background-image: url('images/coffee-beans.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -142,6 +143,15 @@ img {
     top: -15px;
 }
 
+/* padding to allow for fixed footer */
+#contact {
+    min-height: 50vh;
+}
+
+.contact-box {
+    padding: 0 2em 0 2em;
+}
+
 /* lists */
 
 ul {
@@ -149,6 +159,35 @@ ul {
     padding: 0;
 }
 
-#reasons-section li {
+#reasons li {
     margin-top: 5%;
+}
+
+/* Footer */
+
+footer {
+    background-color: #6f4e37;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+}
+
+footer > a,
+footer > span {
+    color: beige;
+    text-decoration: none;
+    padding: 0 15px 0 15px;
+    font-size: 0.8rem;
+}
+
+footer > span {
+    color: silver;
+}
+
+footer > a:hover {
+    color: chocolate;
 }

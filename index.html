@@ -14,7 +14,7 @@
         <strong>Turning caffeine into code since 1999.</strong>
     </header>
 
-    <nav class="black-background text-center">
+    <nav class="black-background text-center text-uppercase-spaced">
 
         <a href="#home">Home</a>
         <a href="#drinks">Drinks</a>
@@ -23,12 +23,12 @@
 
     </nav>
 
-    <section id="reasons-section" class="flex">
+    <section id="reasons" class="flex">
 
         <div class="one-third-width-column text-center text-white">
             <div class="reasons-box">
                 <h2>Reasons to love us</h2>
-                <ul>
+                <ul class="text-uppercase-spaced">
                     <!-- Start with an <ol> in html, but move to <ul> for css -->
                     <li>Free unlimited wifi</li>
                     <li>Charging outlets <br> with every table</li>
@@ -46,10 +46,11 @@
     <!-- <hr /> -->
     <!-- keep hr elements in html module, but remove when doing css -->
 
-    <section id="drinks-section" class="text-white text-center">
+    <section id="drinks" class="text-white text-center">
         <h2>Drinks</h2>
 
-        <div class="flex"> <!-- introduce flex in lesson? -->
+        <div class="flex">
+            <!-- introduce flex in lesson? -->
 
             <div id="coffee-box" class="one-third-width-column drinks-box">
                 <h3>Coffee</h3>
@@ -94,33 +95,43 @@
     <!-- <hr /> -->
     <!-- keep hr elements in html module, but remove when doing css -->
 
-    <section>
-        <h2>Contact</h2>
+    <section id="contact">
+        <h2 class="text-center">Contact</h2>
 
-        <h3>Open times</h3>
-        <!--
+        <div class="flex">
+
+            <div class="one-third-width-column contact-box">
+                <h3>Open times</h3>
+                <!--
             I was going to do a table here, but those elements aren't 
             introduced in fundamentals. Not sure if a description list
             is shoehorning it in too much?
-        -->
-        <dl>
-            <dt>Monday to Thursday</dt>
-            <dd>09:00 - 21:00</dd>
-            <dt>Friday</dt>
-            <dd>09:00 - 17:00</dd>
-            <dt>Saturday and Sunday</dt>
-            <dd>10:00 - 22:00</dd>
-        </dl>
+            -->
+                <dl>
+                    <dt>Weekdays</dt>
+                    <dd>09:00 - 21:00</dd>
+                    <dt>Weekend</dt>
+                    <dd>10:00 - 22:00</dd>
+                </dl>
+            </div>
 
-        <h3>Address:</h3>
-        <p>Coders Coffeehouse,<br />42 Coffeebean street,<br />Dublin</p>
-        <h3>Get in touch</h3>
-        <p>Phone: <span>012 345 678 910</span></p>
-        <p>Email: <span>test@email.com</span></p>
+            <div class="one-third-width-column contact-box">
+                <h3>Address</h3>
+                <p>Coders Coffeehouse,<br />42 Coffeebean street,<br />Dublin</p>
+            </div>
+
+            <div class="one-third-width-column contact-box">
+                <h3>Get in touch</h3>
+                <p>Phone: <span>012 345 678 910</span></p>
+                <p>Email: <span>test@email.com</span></p>
+            </div>
+
+        </div>
 
     </section>
 
-    <footer>
+    <footer class="text-uppercase-spaced">
+        <span>Find us on:</span>
         <a href="https://www.facebook.com" target="_blank">Facebook</a>
         <a href="https://www.twitter.com" target="_blank">Twitter</a>
         <a href="https://www.instagram.com" target="_blank">Instagram</a>
