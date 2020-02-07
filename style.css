@@ -7,7 +7,7 @@ body {
 
 /* Fonts & headings */
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Merienda One', cursive;
 }
 
@@ -35,6 +35,14 @@ strong {
 
 .black-background {
     background-color: black;
+}
+
+.brown-background {
+    background-color: #6f4e37;
+}
+
+.text-white {
+    color: white;
 }
 
 /* Header */
@@ -87,7 +95,7 @@ img {
 }
 
 .reasons-box {
-    padding: 30px 5px;
+    padding: 10px 5px 15px 5px;
     width: 100%;
     background-color: beige;
     margin: 2%;
@@ -97,9 +105,36 @@ img {
     top: 15%;
 }
 
+#drinks-section {
+    padding: 1rem 0 1rem 0;
+}
+
+.drinks-box {
+    margin: 1rem;
+}
+
+#coffee-box {
+    background-color: brown;
+    position: relative;
+    left: 70px;
+    top: -15px;
+}
+
+#tea-box {
+    background-color: tan;
+    z-index: 2;
+}
+
+#cold-drinks-box {
+    background-color: chocolate;
+    position: relative;
+    right: 70px;
+    top: -15px;
+}
+
 /* lists */
 
-#reasons-section ul {
+ul {
     list-style: none;
     padding: 0;
 }
