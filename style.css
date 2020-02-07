@@ -3,12 +3,17 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    background-color: whitesmoke;
 }
 
 /* Fonts & headings */
 
 h1, h2, h3 {
     font-family: 'Merienda One', cursive;
+}
+
+h1, h2 {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
@@ -35,10 +40,6 @@ strong {
 
 .black-background {
     background-color: black;
-}
-
-.brown-background {
-    background-color: #6f4e37;
 }
 
 .text-white {
@@ -95,9 +96,9 @@ img {
 }
 
 .reasons-box {
-    padding: 10px 5px 15px 5px;
+    padding: 10px 5px 25px 5px;
     width: 100%;
-    background-color: beige;
+    background-color: chocolate;
     margin: 2%;
     border-radius: 8px;
     position: relative;
@@ -105,8 +106,17 @@ img {
     top: 15%;
 }
 
+#reasons-section li {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
 #drinks-section {
     padding: 1rem 0 1rem 0;
+    background-image: url('images/coffee-beans.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .drinks-box {
