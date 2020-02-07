@@ -31,12 +31,18 @@ strong {
     font-size: 1.3em;
 }
 
+/* Colors */
+
+.black-background {
+    background-color: black;
+}
+
 /* Header */
 
 .home-page-header {
     min-height: 400px;
     padding-top: 10%;
-    background-image: url('coffeehouse.jpg');
+    background-image: url('images/coffeehouse.jpg');
     background-size: cover;
     background-position: center 75%;
 }
@@ -57,12 +63,6 @@ nav a:hover {
     color: silver;
 }
 
-/* Colors */
-
-.black-background {
-    background-color: black;
-}
-
 /* Layout */
 
 .flex {
@@ -70,12 +70,40 @@ nav a:hover {
     display: flex;
 }
 
-.third-width-column {
-    width: 33%;
+.one-third-width-column {
+    width: 33.33%;
+    display: inline-block;
+}
+
+.two-thirds-width-column {
+    width: 66.66%;
     display: inline-block;
 }
 
 img {
     width: 96%;
-    padding: 2%;
+    margin: 2%;
+    border-radius: 8px;
+}
+
+.reasons-box {
+    padding: 30px 5px;
+    width: 100%;
+    background-color: beige;
+    margin: 2%;
+    border-radius: 8px;
+    position: relative;
+    left: 20%;
+    top: 15%;
+}
+
+/* lists */
+
+#reasons-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+#reasons-section li {
+    margin-top: 5%;
 }
