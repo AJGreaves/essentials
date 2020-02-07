@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda+One|Open+Sans&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Fonts & headings */
+
+h1, h2 {
+    font-family: 'Merienda One', cursive;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: xx-large;
+}
+
+header {
+    color: beige;
+}
+
+.text-center {
+    text-align: center;
+}
+
+strong {
+    font-size: 1.3em;
+}
+
+/* Header */
+
+.home-page-header {
+    min-height: 400px;
+    padding-top: 10%;
+    background-image: url('coffeehouse.jpg');
+    background-size: cover;
+    background-position: center 75%;
+}
+
+/* Navigation */
+
+nav {
+    padding: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 1em;
+    color: beige;
+}
+
+nav a:hover {
+    color: silver;
+}
+
+/* Colors */
+
+.black-background {
+    background-color: black;
+}
+
+/* Layout */
+
+.flex {
+    display: -webkit-box;
+    display: flex;
+}
+
+.third-width-column {
+    width: 33%;
+    display: inline-block;
+}
+
+img {
+    width: 96%;
+    padding: 2%;
+}
