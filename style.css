@@ -40,7 +40,8 @@ strong {
     font-size: 1.3em;
 }
 
-.text-uppercase-spaced {
+.text-uppercase-spaced,
+legend {
     text-transform: uppercase;
     letter-spacing: 2px;
     word-spacing: 5px;
@@ -61,13 +62,38 @@ strong {
 .page-header {
     height: 400px;
     padding-top: 10%;
-    background-repeat: no-repeat;
+
+    /* use long version to start with and 
+    then convert to shorthand when that is introduced */
+    
+    /* background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 75%;
+    background-position: center 75%; */
+    background: center 75% / cover no-repeat;
 }
 
 #home {
     background-image: url('images/coffeehouse.jpg');
+}
+
+.form-page-header {
+    background-image: url('images/table.jpg');
+}
+
+#drinks {
+    padding: 1rem 0 1rem 0;
+    min-height: 50vh;
+    
+    /* use long version to start with and 
+    then convert to shorthand when that is introduced */
+
+    /* background-image: url('images/coffee-beans.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+    
+    background: url('images/coffee-beans.jpg') center center / cover no-repeat fixed;
 }
 
 /* Navigation */
@@ -118,22 +144,6 @@ img {
     position: relative;
     left: 20%;
     top: 15%;
-}
-
-#drinks {
-    padding: 1rem 0 1rem 0;
-    min-height: 50vh;
-    
-    /* use long version to start with and 
-    then convert to shorthand when that is introduced */
-
-    /* background-image: url('images/coffee-beans.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; */
-    
-    background: url('images/coffee-beans.jpg') center center / cover no-repeat fixed;
 }
 
 .drinks-box {
@@ -210,10 +220,6 @@ footer > a:hover {
 
 /* form.html */
 
-.form-page-header {
-    background-image: url('images/table.jpg');
-}
-
 .block-label {
     display: block;
 }
@@ -230,4 +236,57 @@ legend {
 
 input[type=submit] {
     margin-top: 20px
+}
+
+form {
+    width: 700px;
+    background-color: white;
+    margin: 25px auto;    
+    padding: 25px;
+    border-radius: 8px;
+}
+
+input[type=text],
+input[type=email] {
+    height: 30px;
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+
+select {
+    height: 30px;
+    width: 100px;
+    padding-left: 10px;
+}
+
+/* 5% less makes room for padding on parent */
+#other-coffee-text-field {
+    width: 95%;
+}
+
+.half-width-form-block {
+    width: 50%;
+    display: inline-block;
+}
+
+label {
+    margin: 10px 15px 5px 0;
+}
+
+fieldset {
+    border: none;
+}
+
+.checkboxes-box div {
+    margin-top: 15px;
+}
+
+input[type=submit] {
+    margin-left: 0.75rem;
+    padding: 0.75rem;
+    background-color: chocolate;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
