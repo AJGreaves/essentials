@@ -58,6 +58,10 @@ legend {
     font-weight: bold;
 }
 
+small {
+    font-style: italic;
+}
+
 /* Colors */
 
 .black-background {
