@@ -121,15 +121,16 @@ nav a:hover {
 
 /* Layout */
 
+.flex {
+    display: -webkit-box;
+    display: flex;
+}
+
 .vertical-center {
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-}
-
-.justify-content-center {
-    justify-content: center;
 }
 
 .one-third-width-column {
@@ -184,12 +185,32 @@ img {
 
 /* padding to allow for fixed footer */
 #contact {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
-.contact-box {
-    padding: 0 2em 0 2em;
+.contact-boxes-container {
+    width: 66%;
+    margin: 0 auto;
+}
+
+.contact-box-left {
     width: 250px;
+    float: left;
+    margin-top: -20px;
+}
+
+.contact-box-right {
+    width: 250px;
+    float: right;
+    text-align: right;
+    margin-top: -20px;
+}
+
+.contact-box-center {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* lists */

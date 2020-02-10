@@ -25,7 +25,7 @@
 
     </nav>
 
-    <section id="reasons">
+    <section id="reasons" class="flex">
 
         <div class="one-third-width-column text-center text-white">
             <div class="reasons-box">
@@ -51,7 +51,8 @@
     <section id="drinks" class="text-white text-center">
         <h2>Drinks</h2>
 
-        <div>
+        <div class="flex">
+            <!-- introduce flex in lesson? -->
 
             <div id="coffee-box" class="one-third-width-column drinks-box">
                 <h3>Coffee</h3>
@@ -99,10 +100,15 @@
     <section id="contact">
         <h2 class="text-center">Contact</h2>
 
-        <div>
+        <div class="contact-boxes-container">
 
-            <div class="contact-box">
+            <div class="contact-box-left">
                 <h3>Open times</h3>
+                <!--
+            I was going to do a table here, but those elements aren't 
+            introduced in fundamentals. Not sure if a description list
+            is shoehorning it in too much?
+            -->
                 <dl>
                     <dt>Weekdays</dt>
                     <dd>09:00 - 21:00</dd>
@@ -111,15 +117,15 @@
                 </dl>
             </div>
 
-            <div class="contact-box text-center">
-                <h3>Address</h3>
-                <p>Coders Coffeehouse,<br />42 Coffeebean street,<br />Dublin</p>
-            </div>
-
-            <div class="contact-box text-right">
+            <div class="contact-box-right">
                 <h3>Get in touch</h3>
                 <p>Phone: <span>012 345 678 910</span></p>
                 <p>Email: <span>test@email.com</span></p>
+            </div>
+
+            <div class="contact-box-center">
+                <h3>Address</h3>
+                <p>Coders Coffeehouse,<br />42 Coffeebean street,<br />Dublin</p>
             </div>
 
         </div>
