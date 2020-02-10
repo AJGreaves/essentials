@@ -121,11 +121,6 @@ nav a:hover {
 
 /* Layout */
 
-.flex {
-    display: -webkit-box;
-    display: flex;
-}
-
 .vertical-center {
     position: relative;
     top: 50%;
