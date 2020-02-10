@@ -18,6 +18,9 @@ h1, h2 {
 
 h1 {
     font-size: 3em;
+    /* auto margin on h1 was causing gapping above 
+    hero image because of vertical centering */
+    margin: 0;
 }
 
 h2 {
