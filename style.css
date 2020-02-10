@@ -47,6 +47,14 @@ legend {
     word-spacing: 5px;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
+}
+
 /* Colors */
 
 .black-background {
@@ -60,8 +68,7 @@ legend {
 /* Header */
 
 .page-header {
-    height: 400px;
-    padding-top: 10%;
+    height: 50vh;
 
     /* use long version to start with and 
     then convert to shorthand when that is introduced */
@@ -82,7 +89,7 @@ legend {
 
 #drinks {
     padding: 1rem 0 1rem 0;
-    min-height: 50vh;
+    margin-bottom: 80px;
     
     /* use long version to start with and 
     then convert to shorthand when that is introduced */
@@ -117,6 +124,17 @@ nav a:hover {
 .flex {
     display: -webkit-box;
     display: flex;
+}
+
+.vertical-center {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+.justify-content-center {
+    justify-content: center;
 }
 
 .one-third-width-column {
@@ -171,11 +189,12 @@ img {
 
 /* padding to allow for fixed footer */
 #contact {
-    min-height: 50vh;
+    margin-bottom: 60px;
 }
 
 .contact-box {
     padding: 0 2em 0 2em;
+    width: 250px;
 }
 
 /* lists */
@@ -280,6 +299,15 @@ fieldset {
 
 .checkboxes-box div {
     margin-top: 15px;
+}
+
+#terms {
+    height: 200px;
+    width: 90%;
+    padding: 0.5rem;
+    margin: 1.5rem 0 0 15px;
+    border: 1px solid grey;
+    overflow: scroll;
 }
 
 input[type=submit] {
