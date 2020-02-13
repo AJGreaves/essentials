@@ -9,19 +9,15 @@
         .text-center {
             text-align: center;
         }
-
         .text-white {
             color: white;
         }
-
         #coffee-box {
             background-color: brown;
         }
-
         #tea-box {
             background-color: #6f4e37;
         }
-
         #cold-drinks-box {
             background-color: chocolate;
         }
@@ -37,43 +33,53 @@
 
     <hr>
 
-    <!--
-        Internal links start with a # and link to an element with a matching id value.
-        So an anchor with href="#contact" will take the user to the element 
-        on the same page with id="contact" on it.
-    -->
     <a href="#home">Home</a>
     <a href="#drinks">Drinks</a>
     <a href="#contact">Contact</a>
-
-    <!--
-        External links contain the entire url to the other website, including https:// 
-        at the beginning of it.
-        
-        When using external links, adding the target attribute set to _blank will 
-        mean the link is opened in a new tab, so the user does not lose a tab the 
-        website they are currently on
-    -->
     <a href="https://www.facebook.com" target="_blank">Find us on facebook</a>
 
-    <div style="background-color: chocolate;" class="text-center text-white">
+    <div>
         <h2>Reasons to love us</h2>
-        <p>Free unlimited wifi</p>
-        <p>Charging outlets <br> with every table</p>
-        <p>High quality coffee <br> to fuel your code</p>
+        <ol type="I">
+            <li>Free unlimited wifi</li>
+            <li>Charging outlets with every table</li>
+            <li>High quality coffee to fuel your code</li>
+        </ol>
+        
     </div>
 
-    <img src="../../images/coffeeandcode.jpg" alt="Coders Coffeehouse">
+    <img src="../../../images/coffeeandcode.jpg" alt="Coders Coffeehouse">
 
     <div id="drinks">
         <h2>Drinks Menu</h2>
 
         <div class="text-white" id="coffee-box">
             <h3>Coffee</h3>
+            <ul>
+                <li>Latte</li>
+                <li>Americano</li>
+                <li>Cappuccino</li>
+                <li>Espresso</li>
+                <li>Irish Coffee</li>
+                <li>Macchiato</li>
+                <li>Flat White</li>
+            </ul>
         </div>
 
         <div class="text-white" id="tea-box">
             <h3>Tea</h3>
+            <!--
+                An unordered list will have bullet points by default, but you can replace the
+                icons wth other symbols by changing the type attribute to your <ul>
+            -->
+            <ul type="circle">
+                <li>Earl Grey</li>
+                <li>Green tea</li>
+                <li>Lemon tea</li>
+                <li>Peppermint tea</li>
+                <li>Ginger tea</li>
+                <li>Mint tea</li>
+            </ul>
         </div>
 
         <div class="text-white" id="cold-drinks-box">
