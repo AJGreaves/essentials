@@ -19,12 +19,7 @@
             <label for="email-field">Email</label>
             <input id="email-field" type="email" name="name" placeholder="Your email">
         </div>
-
-        <!--
-            For a dropdown menu, only the <select> element has an id and a name attribute,
-            And the <option> elements contain the value attributes needed to send
-            to a database.            
-        -->
+        
         <label for="age">Age</label>
         <select id="age" name="age">
             <option value="under-21">Under 21</option>
@@ -91,7 +86,13 @@
         <label for="not-often">Not often</label>
 
         <div>
+            <!--
+                These two elements behave in the same way when clicked
+                the difference between them is that you can add other 
+                elements inside a button element.
+            -->
             <input type="submit" value="Enter prize draw">
+            <button><em>Enter prize draw</em></button>
         </div>
     </form>
 </body>
