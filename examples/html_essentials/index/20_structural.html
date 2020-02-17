@@ -27,38 +27,41 @@
 
 <body>
 
-    <div id="home" class="text-center">
+    <header id="home" class="text-center">
         <h1>Welcome to Coders Coffeehouse!</h1>
-        <p>Turning caffeine into code since 1999.</p>
-    </div>
+        <!-- 
+            A <strong> element will make the text inside it bolder, and 
+            a screen reader will put more emphasis on the text inside it
+        -->
+        <strong>Turning caffeine into code since 1999.</strong>
+    </header>
 
     <hr>
 
-    <a href="#home">Home</a>
-    <a href="#drinks">Drinks</a>
-    <a href="#contact">Contact</a>
-    <a href="https://www.facebook.com" target="_blank">Find us on facebook</a>
-
+    <!-- a <nav> element points to an area that houses links to navigate the site. -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#drinks">Drinks</a>
+        <a href="#contact">Contact</a>
+        <a href="form.html">Win free coffee</a>
+    </nav>
     
+    <!-- a <section> element is used to represent a group of related content -->
+    <section>
+        <div>
+            <h2>Reasons to love us</h2>
+            <ul>
+                <li>Free unlimited wifi</li>
+                <li>Charging outlets with every table</li>
+                <li>High quality coffee to fuel your code</li>
+            </ul>
+        </div>
 
-    <div>
-        <h2>Reasons to love us</h2>
-        <ol type="I">
-            <li>Free unlimited wifi</li>
-            <li>Charging outlets with every table</li>
-            <li>High quality coffee to fuel your code</li>
-        </ol>
-        
-    </div>
-
-    <!--
-        As the value of an alt attribute is used by screen readers for visually
-        impaired users, it should be descriptive of the image.
-    -->
-    <img src="../../../images/coffeeandcode.jpg" alt="Laptop and cup of coffee on desk">
-    <img src="../../../images/coffeehouse.jpg" alt="Coders Coffeehouse counter top">
-
-    <div id="drinks">
+        <img src="../../../images/coffeeandcode.jpg" alt="Laptop and cup of coffee on desk">
+    </section>
+    
+    <!-- Section for drinks information. -->
+    <section id="drinks">
         <h2>Drinks Menu</h2>
 
         <div class="text-white" id="coffee-box">
@@ -101,9 +104,10 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </section>
 
-    <div id="contact">
+    <!-- Section for contact information. -->
+    <section id="contact">
         <h2>Contact</h2>
 
         <h3>Open times</h3>
@@ -129,7 +133,18 @@
 
         <h3>Address</h3>
         <p>Coders Coffeehouse,<br>42 Coffeebean street,<br>Dublin</p>
-    </div>
+    </section>
+
+    <!--
+        A <footer> element works in very much the same way as the <header> element. 
+        But is positioned at the bottom of the page.
+    -->
+    <footer>
+        <span>Find us on:</span>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    </footer>
     
 </body>
 
