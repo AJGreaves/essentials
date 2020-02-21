@@ -8,11 +8,14 @@ body {
 
 /* Fonts & headings */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Merienda One', cursive;
 }
 
-h1, h2 {
+h1,
+h2 {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -79,7 +82,7 @@ small {
 
     /* use long version to start with and 
     then convert to shorthand when that is introduced */
-    
+
     /* background-repeat: no-repeat;
     background-size: cover;
     background-position: center 75%; */
@@ -97,7 +100,7 @@ small {
 #drinks {
     padding: 1rem 0 1rem 0;
     margin-bottom: 80px;
-    
+
     /* use long version to start with and 
     then convert to shorthand when that is introduced */
 
@@ -106,7 +109,7 @@ small {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; */
-    
+
     background: url('images/coffee-beans.jpg') center center / cover no-repeat fixed;
 }
 
@@ -137,7 +140,7 @@ nav a:hover {
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .one-third-width-column {
@@ -220,6 +223,15 @@ img {
     text-align: center;
 }
 
+th,
+td {
+    border-bottom: 1px solid black;
+}
+
+table {
+    width: 100%;
+}
+
 /* lists */
 
 ul {
@@ -243,19 +255,19 @@ footer {
     z-index: 3;
 }
 
-footer > a,
-footer > span {
+footer>a,
+footer>span {
     color: beige;
     text-decoration: none;
     padding: 0 15px 0 15px;
     font-size: 0.8rem;
 }
 
-footer > span {
+footer>span {
     color: silver;
 }
 
-footer > a:hover {
+footer>a:hover {
     color: chocolate;
 }
 
@@ -282,7 +294,7 @@ input[type=submit] {
 form {
     width: 700px;
     background-color: white;
-    margin: 25px auto;    
+    margin: 25px auto;
     padding: 25px;
     border-radius: 8px;
 }

@@ -2,6 +2,12 @@
 <html lang="en">
 
 <head>
+    <!-- extra content added here, <meta> -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Fill in our survey for your chance to win free coffee for a year.">
+    <meta name="keywords" content="coffee, coffeehouse, cafe, win, survey">
+    <meta name="author" content="Jane Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Win a years supply of coffee from Coders Coffeehouse</title>
 </head>
@@ -17,11 +23,11 @@
     </header>
 
     <nav class="black-background text-center text-uppercase-spaced">
-
-        <a href="index.html">Home</a>
-        <a href="index.html#drinks">Drinks</a>
-        <a href="index.html#contact">Contact</a>
-        <a href="form.html">Win free coffee</a>
+        <!-- extra content added here titles on <a> -->
+        <a href="index.html" title="Go home page">Home</a>
+        <a href="index.html#drinks" title="Go drinks menu">Drinks</a>
+        <a href="index.html#contact" title="Go contact information">Contact</a>
+        <a href="form.html" title="Win free coffee">Win free coffee</a>
 
     </nav>
 
@@ -52,37 +58,48 @@
         </fieldset>
 
         <fieldset class="checkboxes-box">
-            <legend>Which coffees do you enjoy?</legend>
+            <legend>Our products</legend>
+
+            <p class="bold">What is your favourite coffee?</p>
+            
+            <input list="coffees">
+            <datalist id="coffees">
+                <option value="Latte">
+                <option value="Americano">
+                <option value="Cappuccino">
+                <option value="Espresso">
+                <option value="Flat-white">
+            </datalist>
+
+            <p class="bold">Which of our coders coffeehouse snacks do you enjoy?</p>
             <small>(select all that apply)</small>
 
             <div>
-                <input id="latte-checkbox" name="latte" value="latte" type="checkbox">
-                <label for="latte-checkbox">Latte</label>
+                <input id="brownies-checkbox" name="brownies" type="checkbox">
+                <label for="brownies-checkbox">Brownies</label>
             </div>
 
             <div>
-                <input id="americano-checkbox" name="americano" value="americano" type="checkbox">
-                <label for="americano-checkbox">Americano</label>
+                <input id="cookies-checkbox" name="cookies" type="checkbox">
+                <label for="cookies-checkbox">Cookies</label>
             </div>
 
             <div>
-                <input id="cappuccino-checkbox" name="cappuccino" value="cappuccino" type="checkbox">
-                <label for="cappuccino-checkbox">Cappuccino</label>
+                <input id="nachos-checkbox" name="nachos" type="checkbox">
+                <label for="nachos-checkbox">Nachos</label>
             </div>
 
             <div>
-                <input id="espresso-checkbox" name="espresso" value="espresso" type="checkbox">
-                <label for="espresso-checkbox">Espresso</label>
+                <input id="croissants-checkbox" name="croissants" type="checkbox">
+                <label for="croissants-checkbox">Croissants</label>
             </div>
 
             <div>
-                <label for="other-coffee-text-field">Other:</label>
-                <input id="other-coffee-text-field" type="text" name="other-coffee-info" placeholder="Please state">
+                <input id="scones-checkbox" name="scones" type="checkbox">
+                <label for="scones-checkbox">Scones</label>
             </div>
-        </fieldset>
 
-        <fieldset>
-            <legend>How many cups of coffee do you drink a day?</legend>
+            <p class="bold">How many cups of coffee do you drink a day?</p>
 
             <input id="0-2cups-radio" name="cups-a-day" value="0-2cups" type="radio" required>
             <label for="0-2cups-radio">0 to 2 cups</label>
@@ -95,10 +112,8 @@
 
             <input id="9plus-cups-radio" name="cups-a-day" value="9plus-cups" type="radio" required>
             <label for="9plus-cups-radio">9 or more cups</label>
-        </fieldset>
 
-        <fieldset>
-            <legend>How often do you visit Coders Coffeehouse?</legend>
+            <p class="bold">How often do you visit Coders Coffeehouse?</p>
 
             <input id="once-a-week" name="visit-frequency" value="once-a-week" type="radio" required>
             <label for="once-a-week">Once a week</label>
@@ -111,6 +126,12 @@
 
             <input id="not-often" name="visit-frequency" value="not-often" type="radio" required>
             <label for="not-often">Not often</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Feedback</legend>
+            <label for="feedback" class="block-label">What can we do to improve your experience with us?</label>
+            <textarea id="feedback" rows="4" cols="87"></textarea>
         </fieldset>
 
         <div id="terms">
@@ -151,7 +172,11 @@
 
             <p><span class="bold">Winner Notification and Acceptance: </span>
                 The potential winners will be notified on or about
+<<<<<<< HEAD
+                January 2nd 2021, via email. Winner may waive the right to receive the prize. The prize is nonassignable 
+=======
                 January 2nd 2021, via email. Winner may waive the right to receive the prize. The prize is nonassignable
+>>>>>>> 2cd3ca7f2879596cf08afb1395c332f8f3c4b341
                 and non-transferable. Cash will not be awarded in lieu of the prize, but Sponsor
                 reserves the right to substitute a prize of equal or greater value due to unavailability. The winner
                 is solely responsible for reporting and payment of any federal, state and local taxes and for

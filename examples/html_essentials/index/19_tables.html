@@ -21,6 +21,7 @@
         #cold-drinks-box {
             background-color: chocolate;
         }
+        img { width: 500px; }
     </style>
 </head>
 
@@ -38,12 +39,10 @@
     <a href="#contact" title="View contact info">Contact</a>
     <a href="https://www.facebook.com" target="_blank" rel="noopener">Find us on facebook</a>
 
+    
+
     <div>
         <h2>Reasons to love us</h2>
-        <!--
-            An ordered list will be numbered by default, but you can replace the
-            numbers with letters or roman numerals by adding the type attribute to your <ol>
-        -->
         <ol type="I">
             <li>Free unlimited wifi</li>
             <li>Charging outlets with every table</li>
@@ -52,21 +51,52 @@
         
     </div>
 
-    <img src="../../../images/coffeeandcode.jpg" alt="Coders Coffeehouse">
+    <img src="../../../images/coffeeandcode.jpg" alt="Laptop and cup of coffee on desk">
+    <img src="../../../images/coffeehouse.jpg" alt="Coders Coffeehouse counter top">
 
     <div id="drinks">
         <h2>Drinks Menu</h2>
 
         <div class="text-white" id="coffee-box">
             <h3>Coffee</h3>
+            <ul>
+                <li>Latte</li>
+                <li>Americano</li>
+                <li>Cappuccino</li>
+                <li>Espresso</li>
+                <li>Irish Coffee</li>
+                <li>Macchiato</li>
+                <li>Flat White</li>
+            </ul>
         </div>
 
         <div class="text-white" id="tea-box">
             <h3>Tea</h3>
+            <ul type="circle">
+                <li>Earl Grey</li>
+                <li>Green tea</li>
+                <li>Lemon tea</li>
+                <li>Peppermint tea</li>
+                <li>Ginger tea</li>
+                <li>Mint tea</li>
+            </ul>
         </div>
 
         <div class="text-white" id="cold-drinks-box">
             <h3>Cold drinks</h3>
+
+                <ul>
+                    <li>Iced coffee</li>
+                    <li>Ice Tea</li>
+                    <li>Spring water</li>
+                    <li>Soft drinks
+                        <ul> 
+                            <li>Coca Cola</li>
+                            <li>Fanta</li>
+                            <li>7up</li>
+                        </ul>
+                    </li>
+                </ul>
         </div>
     </div>
 
@@ -74,6 +104,26 @@
         <h2>Contact</h2>
 
         <h3>Open times</h3>
+
+        <!-- MORE INFO ON TABLES HERE -->
+        <table>
+            <tr>
+                <th></th>
+                <th>Open</th>
+                <th>Close</th>
+            </tr>
+            <tr>
+                <td>Mon - Fri</td>
+                <td>09:00</td>
+                <td>21:00</td>
+            </tr>
+            
+            <tr>
+                <td>Weekend</td>
+                <td>10:00</td>
+                <td>22:00</td>
+            </tr>
+        </table>
 
         <h3>Get in touch</h3>
 
