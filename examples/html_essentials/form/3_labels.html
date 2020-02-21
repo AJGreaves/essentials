@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Win a years supply of coffee from Coders Coffeehouse</title>
+</head>
+
+<body>
+    <h1>Win a years supply of coffee from Coders Coffeehouse</h1>
+    <p>Complete our survey for your chance to win!</p>
+
+    <!-- All input elements are nested inside the form element. -->
+    <form action="https://formdump.codeinstitute.net" method="post">
+
+        <!-- 
+            placing the label and input pair inside a 
+            div means each form field will be on its own line
+            in the browser.
+        -->
+        <div>
+            <label for="name-field">Name</label>
+            <input id="name-field" type="text" name="name">
+        </div>
+
+        <!--
+            The name attribute is needed for storing and accessing 
+            the input data in a database. You will learn more about 
+            this in the python modules of the course.
+
+        -->
+        <div>
+            <label for="email-field">Email</label>
+            <input id="email-field" type="email" name="name">
+        </div>
+
+        <!-- 
+            An input element with type="submit" will display as a button and
+            the value attribute sets the text to be displayed on the button
+        -->
+        <input type="submit" value="Enter prize draw">
+    </form>
+</body>
+
+</html>

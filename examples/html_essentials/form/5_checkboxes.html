@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Win a years supply of coffee from Coders Coffeehouse</title>
+</head>
+
+<body>
+    <h1>Win a years supply of coffee from Coders Coffeehouse</h1>
+    <p>Complete our survey for your chance to win!</p>
+
+    <!-- All input elements are nested inside the form element. -->
+    <form action="https://formdump.codeinstitute.net" method="post">
+        <div>
+            <label for="name-field">Name</label>
+            <input id="name-field" type="text" name="name" placeholder="Your name">
+        </div>
+        <div>
+            <label for="email-field">Email</label>
+            <input id="email-field" type="email" name="name" placeholder="Your email">
+        </div>
+
+        <!--
+            The name and value attributes are used on the server side to save and access data in a database.
+            You will learn more about them when you cover the database modules of this course. 
+        -->
+        <p>Which coffees do you enjoy?</p>
+        <p>(Select all that apply)</p>
+        <div>
+            <input id="latte-checkbox" name="latte" value="latte" type="checkbox">
+            <label for="latte-checkbox">Latte</label>
+        </div>
+
+        <div>
+            <input id="americano-checkbox" name="americano" value="americano" type="checkbox">
+            <label for="americano-checkbox">Americano</label>
+        </div>
+
+        <div>
+            <input id="cappuccino-checkbox" name="cappuccino" value="cappuccino" type="checkbox">
+            <label for="cappuccino-checkbox">Cappuccino</label>
+        </div>
+
+        <div>
+            <input id="espresso-checkbox" name="espresso" value="espresso" type="checkbox">
+            <label for="espresso-checkbox">Espresso</label>
+        </div>
+
+        <div>
+            <label for="other-coffee-text-field">Other:</label>
+            <input id="other-coffee-text-field" type="text" name="other-coffee-info" placeholder="Please state">
+        </div>
+
+        <input type="submit" value="Enter prize draw">
+    </form>
+</body>
+
+</html>

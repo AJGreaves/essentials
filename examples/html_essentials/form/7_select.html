@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Win a years supply of coffee from Coders Coffeehouse</title>
+</head>
+
+<body>
+    <h1>Win a years supply of coffee from Coders Coffeehouse</h1>
+    <p>Complete our survey for your chance to win!</p>
+
+    <!-- All input elements are nested inside the form element. -->
+    <form action="https://formdump.codeinstitute.net" method="post">
+        <div>
+            <label for="name-field">Name</label>
+            <input id="name-field" type="text" name="name" placeholder="Your name">
+        </div>
+        <div>
+            <label for="email-field">Email</label>
+            <input id="email-field" type="email" name="name" placeholder="Your email">
+        </div>
+
+        <!--
+            For a dropdown menu, only the <select> element has an id and a name attribute,
+            And the <option> elements contain the value attributes needed to send
+            to a database.            
+        -->
+        <label for="age">Age</label>
+        <select id="age" name="age">
+            <option value="under-21">Under 21</option>
+            <option value="22-30">22-30</option>
+            <option value="31-40">31-40</option>
+            <option value="41-50">41-50</option>
+            <option value="51-60">51-60</option>
+            <option value="61+">61+</option>
+        </select>
+
+        <p>Which coffees do you enjoy?</p>
+        <p>(Select all that apply)</p>
+        <div>
+            <input id="latte-checkbox" name="latte" value="latte" type="checkbox">
+            <label for="latte-checkbox">Latte</label>
+        </div>
+
+        <div>
+            <input id="americano-checkbox" name="americano" value="americano" type="checkbox">
+            <label for="americano-checkbox">Americano</label>
+        </div>
+
+        <div>
+            <input id="cappuccino-checkbox" name="cappuccino" value="cappuccino" type="checkbox">
+            <label for="cappuccino-checkbox">Cappuccino</label>
+        </div>
+
+        <div>
+            <input id="espresso-checkbox" name="espresso" value="espresso" type="checkbox">
+            <label for="espresso-checkbox">Espresso</label>
+        </div>
+
+        <div>
+            <label for="other-coffee-text-field">Other:</label>
+            <input id="other-coffee-text-field" type="text" name="other-coffee-info" placeholder="Please state">
+        </div>
+
+        <p>How many cups of coffee do you drink a day?</p>
+
+        <input id="0-2cups-radio" name="cups-a-day" value="0-2cups" type="radio">
+        <label for="0-2cups-radio">0 to 2 cups</label>
+
+        <input id="3-5cups-radio" name="cups-a-day" value="3-5cups" type="radio">
+        <label for="3-5cups-radio">3 to 5 cups</label>
+
+        <input id="6-8cups-radio" name="cups-a-day" value="6-8cups" type="radio">
+        <label for="6-8cups-radio">6 to 8 cups</label>
+
+        <input id="9plus-cups-radio" name="cups-a-day" value="9plus-cups" type="radio">
+        <label for="9plus-cups-radio">9 or more cups</label>
+
+        <p>How often do you visit Coders Coffeehouse?</p>
+
+        <input id="once-a-week" name="visit-frequency" value="once-a-week" type="radio">
+        <label for="once-a-week">Once a week</label>
+
+        <input id="twice-a-week" name="visit-frequency" value="twice-a-week" type="radio">
+        <label for="twice-a-week">Twice a week</label>
+
+        <input id="once-a-fortnight" name="visit-frequency" value="once-a-fortnight" type="radio">
+        <label for="once-a-fortnight">Once a fortnight</label>
+
+        <input id="not-often" name="visit-frequency" value="not-often" type="radio">
+        <label for="not-often">Not often</label>
+
+        <div>
+            <input type="submit" value="Enter prize draw">
+        </div>
+    </form>
+</body>
+
+</html>
