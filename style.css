@@ -300,11 +300,17 @@ form {
 }
 
 input[type=text],
-input[type=email] {
+input[type=email],
+input[list=coffees] {
     height: 30px;
     width: 90%;
     margin: 0 auto;
     padding-left: 10px;
+}
+
+/* overrides css above */
+input[list=coffees] {
+    width: 45%;
 }
 
 select {
@@ -359,7 +365,7 @@ fieldset {
 input[type=submit] {
     margin-left: 0.75rem;
     padding: 0.75rem;
-    background-color: chocolate;
+    background-color: #5e361b;
     color: white;
     border: none;
     border-radius: 5px;
