@@ -370,3 +370,15 @@ input[type=submit] {
     border: none;
     border-radius: 5px;
 }
+
+/* map */
+#map-wrapper {
+    height: 300px;
+    margin-bottom: 55px;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    border: none;
+}

@@ -20,40 +20,44 @@
             <input id="email-field" type="email" name="name" placeholder="Your email">
         </div>
 
-        <p>Which coffees do you enjoy?</p>
-        <p>(Select all that apply)</p>
+        <label for="age">Age</label>
+        <select id="age" name="age">
+            <option value="under-21">Under 21</option>
+            <option value="22-30">22-30</option>
+            <option value="31-40">31-40</option>
+            <option value="41-50">41-50</option>
+            <option value="51-60">51-60</option>
+            <option value="61+">61+</option>
+        </select>
+
+        <p class="bold">Which of our coders coffeehouse snacks do you enjoy?</p>
+        <small>(select all that apply)</small>
+
         <div>
-            <input id="latte-checkbox" name="latte" value="latte" type="checkbox">
-            <label for="latte-checkbox">Latte</label>
+            <input id="brownies-checkbox" name="brownies" type="checkbox">
+            <label for="brownies-checkbox">Brownies</label>
         </div>
 
         <div>
-            <input id="americano-checkbox" name="americano" value="americano" type="checkbox">
-            <label for="americano-checkbox">Americano</label>
+            <input id="cookies-checkbox" name="cookies" type="checkbox">
+            <label for="cookies-checkbox">Cookies</label>
         </div>
 
         <div>
-            <input id="cappuccino-checkbox" name="cappuccino" value="cappuccino" type="checkbox">
-            <label for="cappuccino-checkbox">Cappuccino</label>
+            <input id="nachos-checkbox" name="nachos" type="checkbox">
+            <label for="nachos-checkbox">Nachos</label>
         </div>
 
         <div>
-            <input id="espresso-checkbox" name="espresso" value="espresso" type="checkbox">
-            <label for="espresso-checkbox">Espresso</label>
+            <input id="croissants-checkbox" name="croissants" type="checkbox">
+            <label for="croissants-checkbox">Croissants</label>
         </div>
 
         <div>
-            <label for="other-coffee-text-field">Other:</label>
-            <input id="other-coffee-text-field" type="text" name="other-coffee-info" placeholder="Please state">
+            <input id="scones-checkbox" name="scones" type="checkbox">
+            <label for="scones-checkbox">Scones</label>
         </div>
 
-        <!--
-            Here we have two groups of radios for the user to select, one for how many cups a day
-            they drink, and another for how often they visit coders coffeehouse. 
-            The radios are grouped by their name attribute. So the user can only select one option
-            from the inputs with name="cups-a-day" and one option from the inputs with
-            name="visit-frequency".
-        -->
         <p>How many cups of coffee do you drink a day?</p>
 
         <input id="0-2cups-radio" name="cups-a-day" value="0-2cups" type="radio">
@@ -83,7 +87,19 @@
         <label for="not-often">Not often</label>
 
         <div>
+            <label for="feedback">What can we do to improve your experience with us?</label>
+            <br>
+            <textarea id="feedback" rows="4" cols="87"></textarea>
+        </div>
+
+        <div>
+            <!--
+                These two elements behave in the same way when clicked
+                the difference between them is that you can add other 
+                elements inside a button element.
+            -->
             <input type="submit" value="Enter prize draw">
+            <button><em>Enter prize draw</em></button>
         </div>
     </form>
 </body>

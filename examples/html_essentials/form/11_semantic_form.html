@@ -12,23 +12,30 @@
     <!-- All input elements are nested inside the form element. -->
     <form action="https://formdump.codeinstitute.net" method="post">
 
+        <!--
+            The fieldset for collecting name, email and age starts here. 
+            All the fields to collect this data are nested inside it and a 
+            border is automatically created by the fieldset element around
+            it's contents.
+            
+        -->
         <fieldset>
+            <!--
+                The text inside the legend is displayed as a title with the
+                fieldset border
+            -->
             <legend>Your details</legend>
             <div>
                 <label for="name-field">Name</label>
-                <input id="name-field" type="text" name="name" placeholder="Your name" required>
+                <input id="name-field" type="text" name="name" placeholder="Your name">
             </div>
             <div>
                 <label for="email-field">Email</label>
-                <input id="email-field" type="email" name="name" placeholder="Your email" required>
+                <input id="email-field" type="email" name="name" placeholder="Your email">
             </div>
 
             <label for="age">Age</label>
-            <!--
-                For a dropdown menu the required attribute goes 
-                on the <select> element, not the <option> elements
-            -->
-            <select id="age" name="age" required>
+            <select id="age" name="age">
                 <option value="under-21">Under 21</option>
                 <option value="22-30">22-30</option>
                 <option value="31-40">31-40</option>
@@ -36,42 +43,42 @@
                 <option value="51-60">51-60</option>
                 <option value="61+">61+</option>
             </select>
-        </fieldset>
+
+        </fieldset> <!-- first fieldset ends here -->
 
         <fieldset>
-            <legend>Which coffees do you enjoy?</legend>
-            <p>(Select all that apply)</p>
+            <!-- Next fieldset and legend are set here -->
+            <legend>Our products</legend>
+            <p class="bold">Which of our coders coffeehouse snacks do you enjoy?</p>
+            <small>(select all that apply)</small>
+
             <div>
-                <input id="latte-checkbox" name="latte" value="latte" type="checkbox">
-                <label for="latte-checkbox">Latte</label>
+                <input id="brownies-checkbox" name="brownies" type="checkbox">
+                <label for="brownies-checkbox">Brownies</label>
             </div>
 
             <div>
-                <input id="americano-checkbox" name="americano" value="americano" type="checkbox">
-                <label for="americano-checkbox">Americano</label>
+                <input id="cookies-checkbox" name="cookies" type="checkbox">
+                <label for="cookies-checkbox">Cookies</label>
             </div>
 
             <div>
-                <input id="cappuccino-checkbox" name="cappuccino" value="cappuccino" type="checkbox">
-                <label for="cappuccino-checkbox">Cappuccino</label>
+                <input id="nachos-checkbox" name="nachos" type="checkbox">
+                <label for="nachos-checkbox">Nachos</label>
             </div>
 
             <div>
-                <input id="espresso-checkbox" name="espresso" value="espresso" type="checkbox">
-                <label for="espresso-checkbox">Espresso</label>
+                <input id="croissants-checkbox" name="croissants" type="checkbox">
+                <label for="croissants-checkbox">Croissants</label>
             </div>
 
             <div>
-                <label for="other-coffee-text-field">Other:</label>
-                <input id="other-coffee-text-field" type="text" name="other-coffee-info" placeholder="Please state">
+                <input id="scones-checkbox" name="scones" type="checkbox">
+                <label for="scones-checkbox">Scones</label>
             </div>
-        </fieldset>
 
-        <fieldset>
-            <legend>How many cups of coffee do you drink a day?</legend>
-            <!--
-                For radio elements, the required attribute goes on every radio <input> field.
-            -->
+            <p class="bold">How many cups of coffee do you drink a day?</p>
+
             <input id="0-2cups-radio" name="cups-a-day" value="0-2cups" type="radio" required>
             <label for="0-2cups-radio">0 to 2 cups</label>
 
@@ -83,10 +90,9 @@
 
             <input id="9plus-cups-radio" name="cups-a-day" value="9plus-cups" type="radio" required>
             <label for="9plus-cups-radio">9 or more cups</label>
-        </fieldset>
 
-        <fieldset>
-            <legend>How often do you visit Coders Coffeehouse?</legend>
+            <p class="bold">How often do you visit Coders Coffeehouse?</p>
+
             <input id="once-a-week" name="visit-frequency" value="once-a-week" type="radio" required>
             <label for="once-a-week">Once a week</label>
 
@@ -98,6 +104,12 @@
 
             <input id="not-often" name="visit-frequency" value="not-often" type="radio" required>
             <label for="not-often">Not often</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Feedback</legend>
+            <label for="feedback" class="block-label">What can we do to improve your experience with us?</label>
+            <textarea id="feedback" rows="4" cols="87"></textarea>
         </fieldset>
 
         <div>
