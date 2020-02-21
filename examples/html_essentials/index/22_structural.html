@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Coders Coffeehouse</title>
+
+    <!-- add this to it's own css file on replit -->
+    <style>
+        .text-center {
+            text-align: center;
+        }
+        .text-white {
+            color: white;
+        }
+        #coffee-box {
+            background-color: brown;
+        }
+        #tea-box {
+            background-color: #6f4e37;
+        }
+        #cold-drinks-box {
+            background-color: chocolate;
+        }
+        img { width: 500px; }
+    </style>
+</head>
+
+<body>
+
+    <header id="home" class="text-center">
+        <h1>Welcome to Coders Coffeehouse!</h1>
+        <!-- 
+            A <strong> element will make the text inside it bolder, and 
+            a screen reader will put more emphasis on the text inside it
+        -->
+        <strong>Turning caffeine into code since 1999.</strong>
+    </header>
+
+    <hr>
+
+    <!-- a <nav> element points to an area that houses links to navigate the site. -->
+    <nav>
+        <a href="#home" title="Go to the top of the page">Home</a>
+        <a href="#drinks" title="View drinks menu">Drinks Menu</a>
+        <a href="#contact" title="View contact info">Contact</a>
+        <a href="form.html" title="Win free coffee">Win free coffee</a>
+    </nav>
+    
+    <!-- a <section> element is used to represent a group of related content -->
+    <section>
+        <div>
+            <h2>Reasons to love us</h2>
+            <ul>
+                <li>Free unlimited wifi</li>
+                <li>Charging outlets with every table</li>
+                <li>High quality coffee to fuel your code</li>
+            </ul>
+        </div>
+
+        <img src="../../../images/coffeeandcode.jpg" alt="Laptop and cup of coffee on desk">
+        <img src="../../../images/coffeehouse.jpg" alt="Coders Coffeehouse counter top">
+
+    </section>
+    
+    <!-- Section for drinks information. -->
+    <section id="drinks">
+        <h2>Drinks Menu</h2>
+
+        <div class="text-white" id="coffee-box">
+            <h3>Coffee</h3>
+            <ul>
+                <li>Latte</li>
+                <li>Americano</li>
+                <li>Cappuccino</li>
+                <li>Espresso</li>
+                <li>Irish Coffee</li>
+                <li>Macchiato</li>
+                <li>Flat White</li>
+            </ul>
+        </div>
+
+        <div class="text-white" id="tea-box">
+            <h3>Tea</h3>
+            <ul type="circle">
+                <li>Earl Grey</li>
+                <li>Green tea</li>
+                <li>Lemon tea</li>
+                <li>Peppermint tea</li>
+                <li>Ginger tea</li>
+                <li>Mint tea</li>
+            </ul>
+        </div>
+
+        <div class="text-white" id="cold-drinks-box">
+            <h3>Cold drinks</h3>
+            <ul>
+                <li>Iced coffee</li>
+                <li>Ice Tea</li>
+                <li>Spring water</li>
+                <li>Soft drinks
+                    <ul>
+                        <li>Coca Cola</li>
+                        <li>Fanta</li>
+                        <li>7up</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section for contact information. -->
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <h3>Open times</h3>
+        <table>
+            <tr>
+                <th></th>
+                <th>Open</th>
+                <th>Close</th>
+            </tr>
+            <tr>
+                <td>Mon - Fri</td>
+                <td>09:00</td>
+                <td>21:00</td>
+            </tr>
+            
+            <tr>
+                <td>Weekend</td>
+                <td>10:00</td>
+                <td>22:00</td>
+            </tr>
+        </table>
+
+        <h3>Get in touch</h3>
+
+        <div>
+            <span style="font-weight: bold;">Phone: </span>
+            <span>012 345 678 910</span>
+        </div>
+        <div>
+            <span style="font-weight: bold;">Email: </span>
+            <span>email@coderscoffeehouse.com</span>
+        </div>
+
+
+        <h3>Address</h3>
+        <p>Coders Coffeehouse,<br>42 Coffeebean street,<br>Dublin</p>
+    </section>
+        <iframe id="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.7242164648374!2d-6.143673384163495!3d53.29447507996816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670620fbe2cd39%3A0x934d18ab05ad014a!2sTWOBEANS%20Speciality%20Coffee%20Bar!5e0!3m2!1sen!2snl!4v1582283593941!5m2!1sen!2snl"
+            allowfullscreen="" height="300px" width="100%"></iframe>
+    <section>
+
+    </section>
+    
+
+    <!--
+        A <footer> element works in very much the same way as the <header> element. 
+        But is positioned at the bottom of the page.
+    -->
+    <footer>
+        <span>Find us on:</span>
+        <a href="https://www.facebook.com" target="_blank" title="Find us on Facebook" rel="noopener">Facebook</a>
+        <a href="https://www.twitter.com" target="_blank" title="Find us on Twitter" rel="noopener">Twitter</a>
+        <a href="https://www.instagram.com" target="_blank" title="Find us on Instagram" rel="noopener">Instagram</a>
+    </footer>
+    
+</body>
+
+</html>
