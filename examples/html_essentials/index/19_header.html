@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Coders Coffeehouse</title>
+
+    <!-- add this to it's own css file on replit -->
+    <style>
+        .text-center {
+            text-align: center;
+        }
+        .text-white {
+            color: white;
+        }
+        #coffee-box {
+            background-color: brown;
+        }
+        #tea-box {
+            background-color: #6f4e37;
+        }
+        #cold-drinks-box {
+            background-color: chocolate;
+        }
+        img { width: 500px; }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+        The h1 headline and the tagline are now nested inside a <header> 
+        providing useful semantic information to search engines.
+    -->
+    <header id="home" class="text-center">
+        <h1>Welcome to Coders Coffeehouse!</h1>
+        <p>Turning caffeine into code since 1999.</p>
+    </header>
+
+    <hr>
+
+    <a href="#home">Home</a>
+    <a href="#drinks">Drinks</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.facebook.com" target="_blank">Find us on facebook</a>
+
+    
+
+    <div>
+        <h2>Reasons to love us</h2>
+        <ol type="I">
+            <li>Free unlimited wifi</li>
+            <li>Charging outlets with every table</li>
+            <li>High quality coffee to fuel your code</li>
+        </ol>
+        
+    </div>
+
+    <img src="../../../images/coffeeandcode.jpg" alt="Laptop and cup of coffee on desk">
+
+    <div id="drinks">
+        <h2>Drinks Menu</h2>
+
+        <div class="text-white" id="coffee-box">
+            <h3>Coffee</h3>
+            <ul>
+                <li>Latte</li>
+                <li>Americano</li>
+                <li>Cappuccino</li>
+                <li>Espresso</li>
+                <li>Irish Coffee</li>
+                <li>Macchiato</li>
+                <li>Flat White</li>
+            </ul>
+        </div>
+
+        <div class="text-white" id="tea-box">
+            <h3>Tea</h3>
+            <ul type="circle">
+                <li>Earl Grey</li>
+                <li>Green tea</li>
+                <li>Lemon tea</li>
+                <li>Peppermint tea</li>
+                <li>Ginger tea</li>
+                <li>Mint tea</li>
+            </ul>
+        </div>
+
+        <div class="text-white" id="cold-drinks-box">
+            <h3>Cold drinks</h3>
+            <ul>
+                <li>Iced coffee</li>
+                <li>Ice Tea</li>
+                <li>Spring water</li>
+                <li>Soft drinks
+                    <ul>
+                        <li>Coca Cola</li>
+                        <li>Fanta</li>
+                        <li>7up</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="contact">
+        <h2>Contact</h2>
+
+        <h3>Open times</h3>
+        <dl>
+            <dt>Weekdays</dt>
+            <dd>09:00 - 21:00</dd>
+            
+            <dt>Weekend</dt>
+            <dd>10:00 - 22:00</dd>
+        </dl>
+
+        <h3>Get in touch</h3>
+
+        <div>
+            <span style="font-weight: bold;">Phone: </span>
+            <span>012 345 678 910</span>
+        </div>
+        <div>
+            <span style="font-weight: bold;">Email: </span>
+            <span>email@coderscoffeehouse.com</span>
+        </div>
+
+
+        <h3>Address</h3>
+        <p>Coders Coffeehouse,<br>42 Coffeebean street,<br>Dublin</p>
+    </div>
+    
+</body>
+
+</html>
