@@ -1,0 +1,1 @@
+A project to provide Code Institute students with a step by step narrative as they work through the html and css modules on the course. 
