@@ -1,47 +1,89 @@
 <section>
+    <div class="white-box clearfix">
+        <div class="top-content"><img src="https://s3-eu-west-1.amazonaws.com/codeinstitute/fullstack/Assets-17.png"
+                alt="" class="icon-img" />
+            <p class="m-0 top-content-paragraph">Form</p>
+        </div>
+        <div class="inner-content">
+            <p>Forms have many usees:</p>
+            <ul>
+                <li>Login and registration to secure websites</li>
+                <li>Customer feedback</li>
+                <li>Live chat</li>
+                <li>Booking events</li>
+                <li>Buying products online</li>
+                <li>Polls</li>
+                <li>Anything that requires the submission of user information</li>
+            </ul>
+            <p>
+                Forms collect input from the user. They are essential for the interaction between a user and a
+                website or application. They contain input elements where a user can enter information, such as an
+                email address or a password. You see and use forms all the time online.
+            </p>
+            <p>
+                A <code>&lt;form&gt;</code> element is composed of one or more child elements. Those elements can be
+                text fields (single line or multiline), select boxes, buttons, checkboxes, radio buttons and many other
+                elements used to collect data.
+            </p>
+        </div>
+    </div>
+    <img src="https://s3-eu-west-1.amazonaws.com/codeinstitute/fullstack/01-html-fundamentals/GithubForm.png"
+        alt="A form from GitHub showing user login" class="concept-img large-img" />
+    </div>
+</section>
+
+
+
+
+
+<!-- This section will be used for any content areas that are comprised solely of text -->
+<section>
     <div class="white-box text-center">
         <div class="top-content"><img src="https://s3-eu-west-1.amazonaws.com/codeinstitute/fullstack/Assets-17.png"
                 alt="" class="icon-img" />
             <p>
-                Anchor
+                HTML Tables
             </p>
         </div>
         <div class="inner-content">
+            <p>
+                HTML tables are used to organize data or information in columns and rows. Tables can be used for
+                anything from
+                displaying hospital patient data to cateloging Pokemon cards.
+            </p>
+            <p>
+                A HTML table uses 4 different types of element to construct a table:
+            </p>
+            <ol>
+                <li>The <code>&lt;table&gt;</code> element is the parent element for the entire table, all the other
+                    elements nest inside it.</li>
+                <li>The <code>&lt;tr&gt;</code> element, tr stands for <strong>Table Row</strong> and defines each
+                    row of the table, each row is nested directly inside the <code>&lt;table&gt;</code> element.</li>
+                <li>The <code>&lt;th&gt;</code> element, th stands for <strong>Table Header</strong>.
+                    <code>&lt;th&gt;</code>
+                    is used to define the headings for the table, typically displayed in the top row. </li>
+                <li>The <code>&lt;td&gt;</code> element, td stands for <strong>Table Data</strong>. Use
+                    <code>&lt;td&gt;</code>
+                    for all your table cells that contain the data to be displayed.</li>
+            </ol>
+        </div>
+    </div>
+</section>
 
-            <p><strong>&lt;a href=”http://www.codeinstitute.net”>Code Institute&lt;/a&gt;</strong></p>
-            <p>
-                One of the core elements of the World Wide Web is the anchor (or hyperlink), which links from one page
-                to another. Remember that HTML stands for Hypertext Markup Language. Hypertext implies that it contains
-                hyperlinks. Why is it called hyper? Why not just links or just text? Hyper means that order is not
-                linear. The order of the linking does not matter. It is not important which document is visited first.
-            </p>
-            <p>
-                HTML links are defined by an anchor tag <code>&lt;a&gt;</code>. They can be images, text or any other
-                HTML element, but they need to be wrapped inside an anchor. There are also styles for different states
-                of an anchor; visited and active.
-            </p>
-            <p>
-                When linking to another document, we need to tell the anchor which document should be opened. The
-                document's source is the purpose of the <code>href</code> attribute. It refers to the destination
-                address. Any valid URL can be used as a href value, but it has to be in quotes. You may have noticed
-                that some links lead to a page within the same website, or even to a subsection of the same page, while
-                others redirect to completely different pages outside of the current website.
-            </p>
-            <p><strong>&lt;a href=”http://www.codeinstitute.net” target=”_blank”>Code Institute&lt;/a&gt;</strong></p>
-            <p>
-                If you are providing links to an external page from your site, you probably don’t want users to forget
-                where they started from. To make sure your site doesn’t disappear from view in the browser and be
-                replaced by the new content you’ll want to open the links in a separate browser tab. To do this, just
-                add the <code>target="_blank"</code> attribute and value to your anchor.
-            </p>
-            <p>You can also use the anchor to link to sections on the same page. To do this, the target section will
-                need to have an an <code>id</code>. You then provide the id in the <code>href</code> prefixed with a #.
-                Here is an example:</p>
-            <p>
-                <strong>
-                    <pre style="color:#e84610; text-align: left;">&lt;a href="#next-section">Jump to section on the same page&lt;/a&gt;
-...            
-&lt;div id="next-section"&gt; &lt;!-- The anchor tag links to here --&gt;</pre></strong></p>
+<section>
+    <div class="white-box text-center">
+        <div class="top-content"><img src="https://s3-eu-west-1.amazonaws.com/codeinstitute/fullstack/Assets-20.png"
+                alt="" class="icon-img" />
+            <p>Runnable Example</p>
+        </div>
+        <div class="inner-content">
+            <!-- Replace `src` with relevant URL here. If this is not the first iframe on the page, be sure to change the `id` to the relevant number -->
+            <p><iframe id="iframe1" src="https://repl.it/@codingchallenges/NestedListExample?lite=true" width="900px"
+                    height="750px" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+            <p></p>
+            <!-- If this is not the first iframe on the page, update the this with the relevant iframe ID -->
+            <p><button onclick="toggleFullScreen('iframe1')" class="fancy-button medium ci-special zoom">Expand<i
+                        class="fa fa-arrows-alt"></i></button></p>
         </div>
     </div>
 </section>

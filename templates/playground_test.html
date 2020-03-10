@@ -2,24 +2,27 @@
     <div class="white-box">
         <div class="inner-content pt-4">
             <p>
-                Now that we have learned a little about external links, let’s try playing around with them in the playground below.
+                Let's try creating a very simple form using the playground.
             </p>
 
             <p>Instructions:</p>
             <ol>
-                <li>Place a <strong>link to block</strong> onto the playground, and add a text block with the content <strong>Find us on facebook</strong> to it.</li>
-                <li>Inside the <strong>link to block</strong>, replace target with the url for the facebook landing page https://www.facebook.com/</li>
-                <li>Add the value of the ID as <strong>coffee</strong>.</li>
-                <li>Take another attribute block, and following the same steps create and add an ID of <strong>tea</strong> for the div with the content "Tea" inside it.</li>
+                <li>Place a <strong>form block</strong> into the playground board</li>
+                <li>Nest a <strong>input block</strong> inside the form block</li>
+                <li>Inside the form block, underneath the first input block, add a second input block. using
+                    the dropdown menu change it's selection from text to <strong>submit</strong>.
+                </li>
             </ol>
+            <p>Notice how these elements now create an input field and submit button in the preview window. You may also notice
+                that if you try to submit something in the form, the preview responds with a ?. This is because the form is not yet
+                complete, and does not have what it needs to send the data somewhere.
+            </p>
 
             <p>When you have arranged your elements correctly, the preview window output should look like this:</p>
             <div class="mb-4">
                 <img src="#"
-                    alt="Sample output from classes blockly lesson" width="400" />
+                    alt="Sample output from nested lists blockly lesson" />
             </div>
-
-            <p>Try swapping the id blocks around, to see what changes in the preview window.</p>
 
         </div>
     </div>
@@ -38,7 +41,7 @@
 
             <!-- Replace `src` with relevant URL here. If this is not the first iframe on the page, be sure to change the `id` to the relevant number -->
             <p><iframe id="iframe1"
-                    src="https://code-institute-org.github.io/playground/playground.html?lang=html&blocks=link$plaintext$generic_attribute"
+                    src="https://code-institute-org.github.io/playground/playground.html?lang=html&blocks=form$input_text"
                     width="1000px" height="550px" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
             <p></p>
             <!-- If this is not the first iframe on the page, update the this with the relevant iframe ID -->
