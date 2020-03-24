@@ -1,42 +1,95 @@
-<!-- Coders Coffeehouse runnable introduction-->
+<!-- Start of runnable code including instructions block -->
 <section>
     <div class="white-box">
-        <div class="inner-content py-4">
-            <p>
-                Our Coders Coffeehouse website is going to have a second page on it with a survey form to collect
-                useful information from customers. To open this second html file, click the <i class="far fa-file"></i> icon in 
-                the top left corner of the runnable example below, and then select the <strong>form.html</strong> file.
-            </p>
-            <p>
-                Now that that's open, let's start building our form under the navigation links. Start by adding the form element,
-                and then place an <strong>input</strong> element with the type attribute set to <strong>text</strong> inside the form element. 
-            </p>
-            <p>When you have written your code correctly, the relevant section of the preview output should look like
-                this when you click the run button:</p>
-            <div class="mb-4">
-                <img src="#" alt="Sample output from forms coders coffeehouse runnable example 1" />
-            </div>
+        <div class="top-content"><img src="https://s3-eu-west-1.amazonaws.com/codeinstitute/fullstack/swing.png" alt=""
+                class="icon-img" />
+            <p>Coders Coffeehouse</p>
+        </div>
+        <div class="inner-content">
+            <div id="pgContainer" style="width: 100%; background-color: white;">
 
+                <!-- Instructions go in the pgInstructions div -->
+
+                <div id="pgInstructions"
+                    style="background-color: #fff; width: 35%; height: 100%; display: inline-block; vertical-align: top; position: relative; transition: width 1s;">
+                    <div id="pgText"
+                        style="sizing: border-box; padding: 5px; height: 500px; width: 95%; transition: width 1s; overflow-x: hidden; overflow-y:auto;">
+                        <h2>Instructions</h2>
+                        <p>Now that you have learned about the different levels of headings, let's have a play with them
+                            in the playground. Feel free to change the heading levels around to see how this changes the
+                            code in the html, and the difference it makes to the font sizes in the preview.</p>
+                        <ol>
+                            <li>Place a <strong>heading block</strong> onto the playground board, change its heading
+                                level to 2. </li>
+                            <li>Add the text <strong>Drinks Menu</strong> to the level 2 heading element.</li>
+                            <li>Connect a <strong>level 3 heading element</strong> under the level 2 element.</li>
+                            <li>Add the text <strong>Coffee</strong> to the level 3 heading element.</li>
+                            <li>Connect another <strong>level 3 heading element</strong> under the level 3 element.</li>
+                            <li>Add the text <strong>Tea</strong> to the level 3 heading element.</li>
+                        </ol>
+
+                        <p>Try experimenting with changing the heading levels to see what changes in the output to the
+                            live preview.</p>
+                        <p>When you have arranged your elements correctly, the preview window output should look like
+                            this:</p>
+                        <img src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/html-essentials-6-headings-1.png"
+                            alt="Sample output from headings blockly lesson" width="100%" />
+                    </div>
+                    <button id="pgButton" style="position: absolute; top: 0; right: 0; padding: 7px;">
+                        <i id="collapseBtnPg" class="fa fa-chevron-left" style="font-style: normal;"></i>
+                    </button>
+                </div>
+
+                <!-- replit iframe, replace the URL parameters as required -->
+
+                <iframe id="playground"
+                    src="https://code-institute-org.github.io/playground/playground.html?lang=html&blocks=heading$plaintext"
+                    style="width: 64%; transition: width 1s; min-height: 500px; height: 100%;" frameborder="0"
+                    allowfullscreen="allowfullscreen"></iframe>
+
+                <!-- Full screen toggle button, expands pgContainer -->
+
+                <p><button onclick="toggleFullScreen('pgContainer')"
+                        class="fancy-button medium ci-special zoom">Expand<i class="fa fa-arrows-alt"></i></button></p>
+                <!-- Squidgy div JavaScript -->
+                <script>
+                    
+                    window.addEventListener('resize', function () {
+                        let currHeight = document.getElementById("playground").offsetHeight;
+                        document.getElementById("pgText").style.height = currHeight > 500 ? "100%" :
+                            "500px";
+                    }, true);
+                    document.getElementById("pgButton").addEventListener("click", function () {
+                        let currWidth = document.getElementById("pgInstructions").style.width;
+                        document.getElementById("pgInstructions").style.width = currWidth == "45px" ? "35%" :
+                            "45px";
+                        document.getElementById("playground").style.width = currWidth == "45px" ? "64%" : "95%";
+                        document.getElementById("pgText").style.display = currWidth == "45px" ? "block" :
+                            "none";
+                        /* Changes chevron on button to point the other way */
+                        pgBtn = document.getElementById("collapseBtnPg");
+                        if (pgBtn.classList.contains('fa-chevron-left')) {
+                            pgBtn.classList.remove("fa-chevron-left");
+                            pgBtn.classList.add("fa-chevron-right");
+                        } else {
+                            pgBtn.classList.remove("fa-chevron-right");
+                            pgBtn.classList.add("fa-chevron-left");
+                        }
+                    })
+                </script>
+            </div>
         </div>
     </div>
 </section>
+<!-- End of runnable code -->
 
-<!-- Runnable example section -->
 <section>
-    <div class="white-box text-center">
-        <div class="top-content"><img src="https://s3-eu-west-1.amazonaws.com/codeinstitute/fullstack/Assets-20.png"
-                alt="" class="icon-img" />
-            <p>Runnable Example</p>
-        </div>
-        <div class="inner-content">
-
-            <!-- Replace `src` with relevant URL here. If this is not the first iframe on the page, be sure to change the `id` to the relevant number -->
-            <p><iframe id="iframe2" src="https://repl.it/@codingchallenges/HTML-CC-19-forms-1?lite=true"
-                    width="900px" height="750px" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
-            <p></p>
-            <!-- If this is not the first iframe on the page, update the this with the relevant iframe ID -->
-            <p><button onclick="toggleFullScreen('iframe2')" class="fancy-button medium ci-special zoom">Expand<i
-                        class="fa fa-arrows-alt"></i></button></p>
+    <div class="white-box clearfix">
+        <div class="inner-content mt-3">
+            <p>Well done! You've learned how to construct a table from 4 different html elements. 
+                We're going to test your knowledge in the next unit, and then we'll discuss how to 
+                add media elements to HTML.
+            </p>
         </div>
     </div>
 </section>
