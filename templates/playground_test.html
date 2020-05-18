@@ -6,6 +6,15 @@
             <p>Playground</p>
         </div>
         <div class="inner-content">
+
+            <!-- Playground intro text that is not part of the actual instructions -->
+            <p>
+                In the playground below we have two ordered lists each with three list items nested inside them.
+                The second ordered list is nested inside a div. Lets use a descendant selector to 
+                change the background color only for the list items that are descendants of the div.
+                Click the expand button under the playground to give yourself more room to work.
+            </p>
+
             <div id="pgContainer" style="width: 100%; background-color: white;">
 
                 <!-- Instructions go in the pgInstructions div -->
@@ -15,25 +24,18 @@
                     <div id="pgText"
                         style="sizing: border-box; padding: 5px; height: 500px; width: 95%; transition: width 1s; overflow-x: hidden; overflow-y:auto;">
                         <h2>Instructions</h2>
-                        <p>Now that you have learned about the different levels of headings, let's have a play with them
-                            in the playground. Feel free to change the heading levels around to see how this changes the
-                            code in the html, and the difference it makes to the font sizes in the preview.</p>
-                        <ol>
-                            <li>Place a <strong>heading block</strong> onto the playground board, change it's heading
-                                level to 2. </li>
-                            <li>Add the text <strong>Drinks Menu</strong> to the level 2 heading element.</li>
-                            <li>Connect a <strong>level 3 heading element</strong> under the level 2 element.</li>
-                            <li>Add the text <strong>Coffee</strong> to the level 3 heading element.</li>
-                            <li>Connect another <strong>level 3 heading element</strong> under the level 3 element.</li>
-                            <li>Add the text <strong>Tea</strong> to the level 3 heading element.</li>
-                        </ol>
 
-                        <p>Try experimenting with changing the heading levels to see what changes in the output to the
-                            live preview.</p>
-                        <p>When you have arranged your elements correctly, the preview window output should look like
-                            this:</p>
-                        <img src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/html-essentials-6-headings-1.png"
-                            alt="Sample output from headings blockly lesson" width="100%" />
+                        <ol>
+                            <li>
+                                Change the text inside the yellow selector block from 
+                                <strong>li</strong> to <strong>div li</strong> so that only the list items
+                                that are descendants of the div have the background color applied to them.</li>
+                        </ol>
+                        <p>When you have set your descendant selector correctly, your preview output
+                            should look like this when you hover over the button:
+                        </p>
+                        <img src="https://codeinstitute.s3.amazonaws.com/CSSEssentials/08-descendant-selector-1.png" alt="" />
+
                     </div>
                     <button id="pgButton" style="position: absolute; top: 0; right: 0; padding: 7px;">
                         <i id="collapseBtnPg" class="fa fa-chevron-left" style="font-style: normal;"></i>
@@ -43,7 +45,7 @@
                 <!-- Playground iframe, replace the URL parameters as required -->
 
                 <iframe id="playground"
-                    src="https://code-institute-org.github.io/playground/playground.html?lang=html&blocks=heading$plaintext"
+                    src="https://code-institute-org.github.io/playground/playground.html?kits=html&lang=html"
                     style="width: 64%; transition: width 1s; min-height: 500px; height: 100%;" frameborder="0"
                     allowfullscreen="allowfullscreen"></iframe>
 

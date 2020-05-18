@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Selector</title>
+    <style>
+        p {
+            background-color: cyan;
+        }
+    </style>
+
+</head>
+<body>
+
+    <article>
+
+        <header>
+            <h1>Heading</h1>
+            <p>Paragraph</p>
+        </header>
+        
+        <section>
+            <p>A paragraph inside a section</p>
+            <aside>
+                <p>A paragraph inside an aside</p>
+            </aside>
+        </section>
+
+    </article>
+
+    <p>A paragraph that is <strong>not</strong> a descendant of the article.</p>
+
+</body>
+</html>

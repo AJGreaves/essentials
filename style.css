@@ -255,15 +255,15 @@ footer {
     z-index: 3;
 }
 
-footer>a,
-footer>span {
+footer > a,
+footer > span {
     color: beige;
     text-decoration: none;
     padding: 0 15px 0 15px;
     font-size: 0.8rem;
 }
 
-footer>span {
+footer > span {
     color: silver;
 }
 
@@ -373,6 +373,7 @@ input[type=submit] {
 
 /* map */
 #map-wrapper {
+
     height: 300px;
     margin-bottom: 55px;
 }
