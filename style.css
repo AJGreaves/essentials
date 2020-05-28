@@ -46,11 +46,9 @@ strong {
     font-size: 1.3em;
 }
 
-.text-uppercase-spaced,
+.text-uppercase,
 legend {
     text-transform: uppercase;
-    letter-spacing: 2px;
-    word-spacing: 5px;
 }
 
 .underline {
@@ -119,13 +117,13 @@ nav {
     padding: 1em;
 }
 
-nav a {
+nav > a {
     text-decoration: none;
     margin: 1em;
     color: beige;
 }
 
-nav a:hover {
+nav > a:hover {
     color: silver;
 }
 
@@ -267,7 +265,7 @@ footer > span {
     color: silver;
 }
 
-footer>a:hover {
+footer > a:hover {
     color: chocolate;
 }
 
