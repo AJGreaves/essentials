@@ -127,12 +127,11 @@ nav > a:hover {
     color: silver;
 }
 
-/* Layout */
-
-.flex {
-    display: -webkit-box;
-    display: flex;
+li {
+    list-style-type: none;
 }
+
+/* Layout */
 
 .vertical-center {
     position: relative;
@@ -140,6 +139,7 @@ nav > a:hover {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+
 
 .one-third-width-column {
     width: 33.33%;
@@ -157,6 +157,7 @@ img {
     border-radius: 8px;
 }
 
+
 .reasons-box {
     padding: 10px 5px 25px 5px;
     width: 100%;
@@ -165,11 +166,11 @@ img {
     border-radius: 8px;
     position: relative;
     left: 20%;
-    top: 15%;
+    top: 30px;
 }
 
 .drinks-box {
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 #coffee-box {
@@ -181,7 +182,8 @@ img {
 
 #tea-box {
     background-color: #6f4e37;
-    z-index: 2;
+    z-index: 1;
+    position: relative;
 }
 
 #cold-drinks-box {
@@ -212,6 +214,10 @@ img {
     float: right;
     text-align: right;
     margin-top: -20px;
+}
+
+.spacer {
+    clear: both;
 }
 
 .contact-box-center {

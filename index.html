@@ -15,7 +15,8 @@
 
 <body>
     <!-- starts off as a div, change to a header when semantic html added -->
-    <header id="home" class="page-header text-center" aria-label="Coders coffeehouse banner"> <!-- aria-label added here for accessibility -->
+    <header id="home" class="page-header text-center" aria-label="Coders coffeehouse banner">
+        <!-- aria-label added here for accessibility -->
         <div class="vertical-center">
             <h1>Welcome to Coders Coffeehouse!</h1>
             <!-- Begin with a <p> and move to <strong> when introduced -->
@@ -31,9 +32,9 @@
         <a href="form.html" aria-label="Fill in our survey for your chance to win free coffee">Win free coffee</a>
     </nav>
 
-    <section id="reasons" class="flex">
+    <section id="reasons">
 
-        <div class="one-third-width-column text-center text-white">
+        <div class="one-third-width-column text-center text-white float-left">
             <div class="reasons-box">
                 <h2>Reasons to love us</h2>
                 <ul class="text-uppercase">
@@ -45,11 +46,11 @@
             </div>
         </div>
 
-        <div class="two-thirds-width-column">
+        <div class="two-thirds-width-column float-right">
             <!-- alt updated to be more descriptive of image -->
             <img src="images/coffeeandcode.jpg" alt="Photo of cafe table with laptop, coffee, notepad and pens">
         </div>
-
+        <div class="spacer"></div>
     </section>
 
     <!-- <hr /> -->
@@ -58,12 +59,10 @@
     <section id="drinks" class="text-white text-center">
         <h2>Drinks Menu</h2>
 
-        <div class="flex">
-            <!-- introduce flex in lesson? -->
-
-            <div id="coffee-box" class="one-third-width-column drinks-box">
+        <div id="drinks-menus">
+            <div id="coffee-box" class="one-third-width-column drinks-box float-left">
                 <h3>Coffee</h3>
-                <ul type="none">
+                <ul>
                     <li>Latte</li>
                     <li>Americano</li>
                     <li>Cappuccino</li>
@@ -74,19 +73,7 @@
                 </ul>
             </div>
 
-            <div id="tea-box" class="one-third-width-column drinks-box">
-                <h3>Tea</h3>
-                <ul type="none">
-                    <li>Earl Grey</li>
-                    <li>Green tea</li>
-                    <li>Lemon tea</li>
-                    <li>Peppermint tea</li>
-                    <li>Ginger tea</li>
-                    <li>Mint tea</li>
-                </ul>
-            </div>
-
-            <div id="cold-drinks-box" class="one-third-width-column drinks-box">
+            <div id="cold-drinks-box" class="one-third-width-column drinks-box float-right">
                 <h3>Cold drinks</h3>
                 <ul>
                     <li>Iced coffee</li>
@@ -101,8 +88,21 @@
                     </li>
                 </ul>
             </div>
-
+            <div id="tea-box" class="one-third-width-column drinks-box">
+                <h3>Tea</h3>
+                <ul>
+                    <li>Earl Grey</li>
+                    <li>Green tea</li>
+                    <li>Lemon tea</li>
+                    <li>Peppermint tea</li>
+                    <li>Ginger tea</li>
+                    <li>Mint tea</li>
+                </ul>
+            </div>
         </div>
+
+
+
 
     </section>
 
@@ -141,7 +141,7 @@
                         <td>09:00</td>
                         <td>21:00</td>
                     </tr>
-                    
+
                     <tr>
                         <td>Weekend</td>
                         <td>10:00</td>
@@ -151,7 +151,7 @@
             </div>
         </div>
     </section>
-    
+
     <section id="map-wrapper">
         <iframe id="map" src="https://bit.ly/2QVfkiy"></iframe>
     </section>
@@ -159,9 +159,12 @@
     <footer class="text-uppercase">
         <span>Find us on:</span>
         <!-- title attributes added for accessibility -->
-        <a href="https://www.facebook.com" target="_blank" aria-label="Find us on Facebook (link opens in a new tab)" rel="noopener">Facebook</a>
-        <a href="https://www.twitter.com" target="_blank" aria-label="Find us on Twitter (link opens in a new tab)" rel="noopener">Twitter</a>
-        <a href="https://www.instagram.com" target="_blank" aria-label="Find us on Instagram (link opens in a new tab)" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com" target="_blank" aria-label="Find us on Facebook (link opens in a new tab)"
+            rel="noopener">Facebook</a>
+        <a href="https://www.twitter.com" target="_blank" aria-label="Find us on Twitter (link opens in a new tab)"
+            rel="noopener">Twitter</a>
+        <a href="https://www.instagram.com" target="_blank" aria-label="Find us on Instagram (link opens in a new tab)"
+            rel="noopener">Instagram</a>
     </footer>
 
 </body>
