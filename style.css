@@ -171,6 +171,8 @@ img {
 
 .drinks-box {
     margin: 1rem 0;
+    width: 33%;
+    display: inline-block;
 }
 
 #coffee-box {
